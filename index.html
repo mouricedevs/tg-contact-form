@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Gifted Tech for inquiries, collaborations, and more.">
+    <meta property="og:title" content="CONTACT GIFTED TECH" />
+    <meta property="og:description" content="Contact Gifted Tech for inquiries, collaborations, and more." />
+    <meta property="og:image" content="https://telegra.ph/file/c2a4d8d65722553da4c89.jpg" />
+    <meta property="og:url" content="https://telegra.ph/file/c2a4d8d65722553da4c89.jpg" />
+    <meta name="twitter:image" content="https://telegra.ph/file/c2a4d8d65722553da4c89.jpg">
+    <link rel="icon" href="https://telegra.ph/file/c2a4d8d65722553da4c89.jpg" type="image/x-icon">
+    <title>CONTACT | GIFTED TECH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #FF416C, #FF4B2B);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            color: white;
+            transition: background 0.5s ease-in-out;
+        }
+
+        .message-box {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 25px;
+            width: 100%;
+            max-width: 350px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            margin-right: 8px;
+            border: 2px solid #ff4b2b;
+        }
+
+        .username {
+            font-weight: bold;
+            font-size: 15px;
+            color: #333;
+        }
+
+        .description {
+            color: green;
+            font-size: 12px;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin-top: 8px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.9);
+        }
+
+        textarea {
+            height: 80px;
+            width: 90%;
+            resize: none;
+        }
+
+        .send-button {
+            background: #0000ff;
+            color: yellow;
+            border: none;
+            border-radius: 25px;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 50%;
+            max-width: 350px;
+            text-align: center;
+            transition: background 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .send-button:hover {
+            background: green;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: white;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: yellow;
+        }
+
+        .footer {
+            font-size: 12px;
+            margin-top: 20px;
+            color: yellow;
+            text-align: center;
+            background-color: transparent;
+            padding: 10px;
+            width: 50%;
+        }
+
+        .footer a {
+            color: yellow;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .status {
+            font-size: 24px;
+            margin-top: 5px;
+            color: yellow;
+            text-align: center;
+            background-color: transparent;
+            padding: 10px;
+            width: 50%;
+        }
+
+        .status a {
+            color: yellow;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background video -->
+    <video class="video-bg" autoplay muted loop onloadeddata="showVideo()">
+        <source src="https://files.catbox.moe/ft93w4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!-- Footer with link -->
+    <div class="status">
+        <a href="#">CONTACT US</a>
+    </div></br>
+    
+    <div class="message-box">
+        <div class="header">
+            <img src="https://avatars.githubusercontent.com/u/166598671?s=400&u=3ece1053468a783effee824e979e6f61504befbf&v=4" alt="Gifted Tech">
+            <div>
+                <div class="username">@mouricedevs</div>
+                <div class="description">Message GiftedTech</div>
+            </div>
+        </div>
+
+        <!-- Input for Name (Required) -->
+        <input type="text" id="name" placeholder="Your Name (Required)" required>
+        
+        <!-- Input for Email (Optional) -->
+        <input type="email" id="email" placeholder="Your Email (Optional)">
+        
+        <!-- Input for Phone Number (Optional) -->
+        <input type="tel" id="phone" placeholder="Your Phone Number (Optional)">
+
+        <!-- Textarea for Message (Required) -->
+        <textarea id="message" placeholder="Your Message (Required)" required></textarea>
+    </div>
+
+    <!-- Send Button -->
+    <div class="send-button" onclick="sendMessage()">Send</div>
+
+    <!-- Social media links with logos -->
+    <div class="social-links">
+        <a href="https://github.com/mouricedevs" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://whatsapp.com/channel/0029VaYauR9ISTkHTj4xvi1l" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/mouricedevs" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://instagram.com/giftedtechnexus" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com/@giftedtechke" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100092902700629&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <!-- Footer with link -->
+    <div class="footer">
+        <a href="https://whatsapp.com/channel/0029VaYauR9ISTkHTj4xvi1l"><u>Made with 💜 - Gifted Tech</u></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script> (function(_0x5476c4,_0x243dda){const _0x3d8f76=gifted_0x57bf,_0x23a3f5=_0x5476c4();while(!![]){try{const _0x249adf=-parseInt(_0x3d8f76(0xe0))/0x1+parseInt(_0x3d8f76(0xfa))/0x2*(-parseInt(_0x3d8f76(0xf9))/0x3)+-parseInt(_0x3d8f76(0xe2))/0x4+parseInt(_0x3d8f76(0xf1))/0x5*(-parseInt(_0x3d8f76(0xd4))/0x6)+parseInt(_0x3d8f76(0xf5))/0x7*(parseInt(_0x3d8f76(0xf2))/0x8)+-parseInt(_0x3d8f76(0xde))/0x9*(-parseInt(_0x3d8f76(0xd8))/0xa)+parseInt(_0x3d8f76(0xd5))/0xb*(parseInt(_0x3d8f76(0xd6))/0xc);if(_0x249adf===_0x243dda)break;else _0x23a3f5['push'](_0x23a3f5['shift']());}catch(_0x2afffa){_0x23a3f5['push'](_0x23a3f5['shift']());}}}(gifted_0x1f92,0x4932c));function showVideo(){const _0x1f5c1b=gifted_0x57bf;document[_0x1f5c1b(0xf6)]('.video-bg')[_0x1f5c1b(0xe1)][_0x1f5c1b(0xec)]='1',document[_0x1f5c1b(0xdc)]['style']['background']=_0x1f5c1b(0xdb);}function gifted_0x57bf(_0x1837c6,_0x34a9fe){const _0x1f92af=gifted_0x1f92();return gifted_0x57bf=function(_0x57bf42,_0x358412){_0x57bf42=_0x57bf42-0xd4;let _0x14aa51=_0x1f92af[_0x57bf42];return _0x14aa51;},gifted_0x57bf(_0x1837c6,_0x34a9fe);}function gifted_0x1f92(){const _0x5efbc4=['style','1814432MFxgEC','\x0aMessage:\x20','trim','json','phone','catch','NEW\x20ENQUIRY\x20MESSAGE:\x0a\x0aName:\x20','Name\x20and\x20Message\x20Cannot\x20be\x20Empty!','\x0aPhone:\x20','stringify','opacity','POST','An\x20error\x20occurred,\x20please\x20try\x20again.','fire','Success','185JYUKRM','8CvcsXl','Error','Message\x20Sent\x20Successfully!','1123857AOpGpj','querySelector','/send-message','email','805731RDPbYj','2vtCmZf','29994mwFBFL','3261346nLmOLG','48FrHyIc','getElementById','10zgGAwb','value','error','none','body','then','1550781nXvHUF','Error:','311836dCmgNQ'];gifted_0x1f92=function(){return _0x5efbc4;};return gifted_0x1f92();}function sendMessage(){const _0x2ebd59=gifted_0x57bf,_0x1b0c88=document[_0x2ebd59(0xd7)]('name')[_0x2ebd59(0xd9)][_0x2ebd59(0xe4)](),_0x3b0fa8=document[_0x2ebd59(0xd7)]('message')['value'][_0x2ebd59(0xe4)](),_0x9a2e2d=document[_0x2ebd59(0xd7)](_0x2ebd59(0xf8))[_0x2ebd59(0xd9)]['trim'](),_0x5b63d9=document['getElementById'](_0x2ebd59(0xe6))[_0x2ebd59(0xd9)][_0x2ebd59(0xe4)]();if(!_0x1b0c88||!_0x3b0fa8){Swal[_0x2ebd59(0xef)](_0x2ebd59(0xf3),_0x2ebd59(0xe9),_0x2ebd59(0xda));return;}const _0x25da42=_0x2ebd59(0xe8)+_0x1b0c88+_0x2ebd59(0xe3)+_0x3b0fa8+'\x0aEmail:\x20'+_0x9a2e2d+_0x2ebd59(0xea)+_0x5b63d9;fetch(_0x2ebd59(0xf7),{'method':_0x2ebd59(0xed),'headers':{'Content-Type':'application/json'},'body':JSON[_0x2ebd59(0xeb)]({'text':_0x25da42})})['then'](_0x340ae9=>_0x340ae9[_0x2ebd59(0xe5)]())[_0x2ebd59(0xdd)](_0x10e8e9=>{const _0x7c6d52=_0x2ebd59;_0x10e8e9['ok']?(Swal[_0x7c6d52(0xef)](_0x7c6d52(0xf0),_0x7c6d52(0xf4),'success'),document[_0x7c6d52(0xd7)]('name')[_0x7c6d52(0xd9)]='',document[_0x7c6d52(0xd7)]('message')[_0x7c6d52(0xd9)]='',document[_0x7c6d52(0xd7)](_0x7c6d52(0xf8))[_0x7c6d52(0xd9)]='',document[_0x7c6d52(0xd7)](_0x7c6d52(0xe6))['value']=''):Swal['fire'](_0x7c6d52(0xf3),'Failed\x20to\x20send\x20message,\x20please\x20try\x20again.',_0x7c6d52(0xda));})[_0x2ebd59(0xe7)](_0x3a0c79=>{const _0x26cd01=_0x2ebd59;console[_0x26cd01(0xda)](_0x26cd01(0xdf),_0x3a0c79),Swal[_0x26cd01(0xef)]('Error',_0x26cd01(0xee),_0x26cd01(0xda));});} </script>
+</body>
+</html>
