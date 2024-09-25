@@ -8,7 +8,7 @@
 <summary>𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘</summary>
 
 <details>
-<summary>GETTING BOT_TOKEN</summary>
+<summary>A. GETTING BOT_TOKEN</summary>
 
 ### StepWise ###
 
@@ -29,7 +29,7 @@ https://github.com/mouricedevs/telegram-bot/assets/166598671/8bf0cc38-2462-4dac-
 ___
 
 <details>
-<summary>GETTING CHAT_ID</summary>
+<summary>B. GETTING CHAT_ID</summary>
 
 ### StepWise ###
 
