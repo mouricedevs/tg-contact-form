@@ -1,0 +1,28 @@
+{
+  "name": "tg-contact-form@v1.0.0",
+  "description": "Simple Contact Form Submitted via Telegram Bot",
+  "website": "https://api-gifted-tech.onrender.com/contact",
+  "repository": "https://github.com/mouricedevs/tg-contact-form",
+  "logo": "https://telegra.ph/file/a202f454c9532c3f5b7f8.jpg",
+  "keywords": ["gifted-tech", "giftedtech", "contact-form"],
+  "success_url": "/",
+  "stack": "heroku-24",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token.",
+      "required": true,
+      "value": ""
+    },
+    "CHAT_ID": {
+      "description": "Your Telegram Chat Id.",
+      "required": true,
+      "value": ""
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
