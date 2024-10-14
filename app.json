@@ -1,9 +1,10 @@
 {
   "name": "tg-contact-form@v1.0.0",
   "description": "Simple Contact Form Submitted via Telegram Bot",
-  "website": "https://api-gifted-tech.onrender.com/contact",
+  "website": "https://contact-gifted-tech.vercel.app",
   "repository": "https://github.com/Devenlee350/tg-contact-form",
   "logo": "https://i.imgur.com/ZnfODeW.jpeg",
+
   "keywords": ["gifted-tech", "giftedtech", "contact-form"],
   "success_url": "/",
   "stack": "heroku-24",
